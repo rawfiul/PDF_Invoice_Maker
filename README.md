@@ -28,6 +28,7 @@ A simple python app to create simple invoices in PDF format.
 Enter details of your company, details of your clients and then details of the items transacted; and the program will export the PDF in the `/PDFs` folder. The program remembers your company and client details and last invoice number so its faster to create subsequent invoices, without entering recurring details twice.
 
 **Points to Note for users:**
+- Only Windows OS is supported currently. Simply download the packaged `PDF_Invoice_Maker_by_rawfiul.7z` file and unpack and run the `pdf_invoice_maker.exe`. No python or additional software needed to be installed for this program to run.
 - Your company logo needs to be in .png format and inside the `/logos` folder. Then in the `Company Logo File Name` field of `Company Details` window, simply use the file name. For example, enter `my_logo.png` inside that field if the file name of your image is `my_logo.png`, without any `/` or `.`
 - The names of your company and your client's company must be unique. Meaning if you created a company or client named `ABC Inc`, you can not create another company or client with the same name.
 - You can skip entering other details of your company and client's, but name is mandatory. I recommend entering all details because the program asks for bare minimum anyways.
