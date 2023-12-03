@@ -4,15 +4,19 @@ A simple python app to create simple invoices in PDF format.
 
 ### Screenshots:
 **Sample Invoice**
+
 ![Sample Invoice](/assets_for_readme/screenshot_sample_invoice.png)
 
 **Company Details GUI**
+
 ![Company Details GUI](/assets_for_readme/screenshot_company_details.png)
 
 **Client Details GUI**
+
 ![Client Details GUI](/assets_for_readme/screenshot_client_details.png)
 
 **Item Details GUI**
+
 ![Item Details GUI](/assets_for_readme/screenshot_items_details.png)
 
 
