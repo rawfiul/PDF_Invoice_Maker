@@ -20,7 +20,7 @@ A simple python app to create simple invoices in PDF format.
 ![Item Details GUI](/assets_for_readme/screenshot_items_details.png)
 
 
-### Video Demo:  
+### Video Demo (Clicking below will redirect to youtube):  
 [![Watch the video demo](https://img.youtube.com/vi/PssY15xIRgY/0.jpg)](https://www.youtube.com/watch?v=PssY15xIRgY)
 
 
