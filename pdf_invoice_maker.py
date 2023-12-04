@@ -135,6 +135,7 @@ def invoicer():
         total = 0
 
 
+
 # This function launches the GUI window asking for supplier details
 def suppliers_window():
     # Create the supplier window
@@ -215,9 +216,13 @@ def suppliers_window():
     save_button = ttk.Button(s_window, text="Save Details", command=save_details)
     save_button.grid(row=8, column=0, columnspan=2, pady=10)
 
+    # Branding
+    title_label = ttk.Label(s_window, text="Contact github.com/rawfiul to report errors", foreground="grey")
+    title_label.grid(row=9, column=0, columnspan=2, pady=2)
+
     # Error label to display a message if any
     error_label = ttk.Label(s_window, text="", foreground="red")
-    error_label.grid(row=9, column=0, columnspan=2, pady=5, padx=10)
+    error_label.grid(row=10, column=0, columnspan=2, pady=5, padx=10)
 
     # Run the application
     s_window.mainloop()
@@ -528,9 +533,13 @@ def buyer_window():
     )
     final_submit_button.grid(row=10, column=0, columnspan=4, padx=10, pady=5)
 
+    # Branding
+    title_label = ttk.Label(b_window, text="Contact github.com/rawfiul to report errors", foreground="grey")
+    title_label.grid(row=11, column=0, columnspan=4, pady=2, padx=10)
+
     # Error label to display a message if any
     error_label = ttk.Label(b_window, text="", foreground="red")
-    error_label.grid(row=11, column=0, columnspan=4, pady=5, padx=10)
+    error_label.grid(row=12, column=0, columnspan=4, pady=5, padx=10)
 
     # Run this window
     b_window.mainloop()
@@ -538,9 +547,6 @@ def buyer_window():
 
 # The items window
 def items_window():
-    # When enter/return key is pressed on keyboard, go highlight next field
-    
-
     # This adds another row for userinput of item, quantity and price
     def add_row():
         nonlocal row_index
@@ -581,7 +587,7 @@ def items_window():
 
 
         # For each field row, get user input and store it in memory
-        for i in range(row_index - 4):
+        for i in range(row_index - 5):
             item_name = entry_items[i].get()
             quantity = entry_quantities[i].get()
             price = entry_prices[i].get()
@@ -637,13 +643,8 @@ def items_window():
     root = tk.Tk()
     root.title("ITEM DETAILS")
 
-    # Create entry fields for item name, quantity, and price
-    ttk.Label(root, text="Item Name").grid(row=4, column=0, padx=5, pady=5)
-    ttk.Label(root, text="Quantity (Value only)").grid(row=4, column=1, padx=5, pady=5)
-    ttk.Label(root, text="Price (each)").grid(row=4, column=2, padx=5, pady=5)
-
     # Initialize row index
-    row_index = 4
+    row_index = 5
 
     # Lists to store entry fields
     entry_items = []
@@ -677,9 +678,18 @@ def items_window():
     btn_more.grid(row=2, column=0, columnspan=4, pady=10)
     btn_more.state(["!alternate"])
 
+    # Branding
+    title_label = ttk.Label(root, text="Contact github.com/rawfiul to report errors", foreground="grey")
+    title_label.grid(row=3, column=0, columnspan=4, pady=2, padx=10)
+
     # Error placeholder
     error_label = ttk.Label(root, text="", foreground="red")
-    error_label.grid(row=3, column=0, columnspan=4, pady=5, padx=10)
+    error_label.grid(row=4, column=0, columnspan=4, pady=5, padx=10)
+
+    # Create entry fields for item name, quantity, and price
+    ttk.Label(root, text="Item Name").grid(row=5, column=0, padx=5, pady=5)
+    ttk.Label(root, text="Quantity (Value only)").grid(row=5, column=1, padx=5, pady=5)
+    ttk.Label(root, text="Price (each)").grid(row=5, column=2, padx=5, pady=5)
 
     # Start the window
     root.mainloop()
